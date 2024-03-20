@@ -1,6 +1,6 @@
 # PlaydateKitTemplate
 
-> Warning:
+> [!Warning]
 > This is a WIP. See [here](https://github.com/finnvoor/PlaydateKit/pull/5) for more info.
 
 This is a template package for [PlaydateKit](https://github.com/finnvoor/PlaydateKit).
