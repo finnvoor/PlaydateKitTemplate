@@ -17,7 +17,7 @@ let package = Package(
     name: "PlaydateKitTemplate",
     products: [.library(name: "PlaydateKitTemplate", targets: ["PlaydateKitTemplate"])],
     dependencies: [
-        .package(url: "https://github.com/finnvoor/PlaydateKit.git", branch: "improvement/pdc-plugin")
+        .package(url: "https://github.com/finnvoor/PlaydateKit.git", branch: "main"),
     ],
     targets: [
         .target(
