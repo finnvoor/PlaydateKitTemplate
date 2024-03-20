@@ -1,11 +1,11 @@
 # PlaydateKitTemplate
 
-> [!Warning]
+> [!Important]
 > This is a WIP. See [here](https://github.com/finnvoor/PlaydateKit/pull/5) for more info.
 
 This is a template package for [PlaydateKit](https://github.com/finnvoor/PlaydateKit).
 
-### How to Use
+## How to Use
 For detailed instructions on how to get started creating a game using PlaydateKit, see [here](https://github.com/finnvoor/PlaydateKit).
 
 1. Install a nightly [Swift](https://www.swift.org/download/#snapshots) toolchain that supports the Embedded experimental feature.
