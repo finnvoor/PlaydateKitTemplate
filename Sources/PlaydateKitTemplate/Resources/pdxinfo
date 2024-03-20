@@ -1,0 +1,5 @@
+name=PlaydateKit Template
+author=Finn Voorhees
+description=An example Playdate game built using PlaydateKit
+bundleID=com.finnvoorhees.PlaydateKitTemplate
+imagePath=
