@@ -40,28 +40,10 @@
       debugDocumentVersioning = "NO"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <PreActions>
-         <ExecutionAction
-            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
-            <ActionContent
-               title = "Run Script"
-               scriptText = "cd $WORKSPACE_PATH/../../../&#10;swift package pdc --allow-writing-to-directory $TARGET_BUILD_DIR&#10;">
-               <EnvironmentBuildable>
-                  <BuildableReference
-                     BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "PlaydateKitTemplate"
-                     BuildableName = "PlaydateKitTemplate"
-                     BlueprintName = "PlaydateKitTemplate"
-                     ReferencedContainer = "container:">
-                  </BuildableReference>
-               </EnvironmentBuildable>
-            </ActionContent>
-         </ExecutionAction>
-      </PreActions>
       <PathRunnable
          runnableDebuggingMode = "0"
-         Location = "home"
-         FilePath = "Developer/PlaydateSDK/bin/Playdate Simulator.app/Contents/MacOS/Playdate Simulator">
+         Location = "workspace"
+         FilePath = ".swiftpm/build-and-run.sh">
       </PathRunnable>
       <MacroExpansion>
          <BuildableReference
@@ -72,12 +54,13 @@
             ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>
-      <CommandLineArguments>
-         <CommandLineArgument
-            argument = "$(TARGET_BUILD_DIR)/$(PRODUCT_NAME).pdx"
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "PRODUCT_NAME"
+            value = "$(PRODUCT_NAME)"
             isEnabled = "YES">
-         </CommandLineArgument>
-      </CommandLineArguments>
+         </EnvironmentVariable>
+      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -85,18 +68,9 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "PlaydateKitTemplate"
-            BuildableName = "PlaydateKitTemplate"
-            BlueprintName = "PlaydateKitTemplate"
-            ReferencedContainer = "container:">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug">
+      buildConfiguration = "Release">
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
