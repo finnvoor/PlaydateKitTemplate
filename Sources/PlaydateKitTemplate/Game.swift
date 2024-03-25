@@ -12,7 +12,7 @@ final class Game: PlaydateGame {
     let logoBitmap = Graphics.Bitmap(path: "logo.png")
     lazy var logoSprite: Sprite.Sprite = {
         let sprite = Sprite.Sprite()
-        sprite.setImage(image: logoBitmap)
+        sprite.setImage(logoBitmap)
         sprite.bounds = .init(x: 0, y: 0, width: 400, height: 240)
         return sprite
     }()
