@@ -4,7 +4,7 @@ final class Game: PlaydateGame {
     // MARK: Lifecycle
 
     init() {
-        logoSprite.image = Graphics.Bitmap(path: "logo.png")
+        logoSprite.image = try! Graphics.Bitmap(path: "logo.png")
         logoSprite.bounds = .init(x: 0, y: 0, width: 400, height: 240)
         logoSprite.addToDisplayList()
     }
