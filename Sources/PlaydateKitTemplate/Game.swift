@@ -4,18 +4,14 @@ final class Game: PlaydateGame {
     // MARK: Lifecycle
 
     init() {
+        logoSprite.image = Graphics.Bitmap(path: "logo.png")
+        logoSprite.bounds = .init(x: 0, y: 0, width: 400, height: 240)
         logoSprite.addToDisplayList()
     }
 
     // MARK: Internal
 
-    let logoBitmap = Graphics.Bitmap(path: "logo.png")
-    lazy var logoSprite: Sprite.Sprite = {
-        let sprite = Sprite.Sprite()
-        sprite.setImage(logoBitmap)
-        sprite.bounds = .init(x: 0, y: 0, width: 400, height: 240)
-        return sprite
-    }()
+    let logoSprite = Sprite.Sprite()
 
     func update() -> Bool {
         Sprite.drawDisplayListSprites()
