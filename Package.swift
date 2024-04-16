@@ -1,4 +1,4 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 5.10
 
 import Foundation
 import PackageDescription
@@ -15,6 +15,7 @@ if let path = Context.environment["PLAYDATE_SDK_PATH"] {
 
 let package = Package(
     name: "PlaydateKitTemplate",
+    platforms: [.macOS(.v14)],
     products: [.library(name: "PlaydateKitTemplate", targets: ["PlaydateKitTemplate"])],
     dependencies: [
         .package(url: "https://github.com/finnvoor/PlaydateKit.git", branch: "main"),
