@@ -20,7 +20,7 @@ final class Game: PlaydateGame {
     }
 
     func gameWillPause() {
-        System.log(StaticString("Paused!"))
+        print("Paused!")
     }
 }
 
