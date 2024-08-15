@@ -3,7 +3,7 @@
 This is a template package for [PlaydateKit](https://github.com/finnvoor/PlaydateKit).
 
 ## How to Use
-For detailed instructions and documentation on how to get started creating a game using PlaydateKit, see [here](https://github.com/finnvoor/PlaydateKit/documentation/playdatekit).
+For detailed instructions and documentation on how to get started creating a game using PlaydateKit, see [here](https://finnvoor.github.io/PlaydateKit/documentation/playdatekit/).
 
 1. Install a recent nightly [Swift](https://www.swift.org/download/#snapshots) toolchain that supports the Embedded experimental feature.
 2. Install the [Playdate SDK](https://play.date/dev/).
