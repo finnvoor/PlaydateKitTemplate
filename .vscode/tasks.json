@@ -1,0 +1,48 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Playdate: run (debug)",
+            "detail": "./swiftpm/build-and-run.sh",
+            "command": "build-and-run.sh",
+            "options": {
+                "cwd": "${workspaceFolder}/.swiftpm",
+                "env": {
+                    "PRODUCT_NAME": "${workspaceFolderBasename}"
+                }
+            },
+            "presentation": {
+                "close": true,
+                "clear": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "type": "swift-plugin",
+            "command": "pdc",
+            "args": [],
+            "label": "Playdate: build (debug)",
+            "detail": "swift package pdc",
+            "presentation": {
+                "close": true,
+                "clear": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "type": "swift-plugin",
+            "command": "pdc",
+            "args": [
+                "--configuration",
+                "release"
+            ],
+            "label": "Playdate: build (release)",
+            "detail": "swift package pdc --configuration release",
+            "presentation": {
+                "close": true,
+                "clear": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
