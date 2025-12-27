@@ -3,7 +3,7 @@ import PlaydateKit
 // MARK: - Game
 
 @PlaydateMain
-struct Game: PlaydateGame {
+final class Game: PlaydateGame {
     // MARK: Lifecycle
 
     init() {
