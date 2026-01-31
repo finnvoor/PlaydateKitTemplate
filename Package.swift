@@ -1,6 +1,5 @@
 // swift-tools-version: 6.1
 
-import Foundation
 import PackageDescription
 
 /// Hack to force Xcode builds to not produce a dylib, since linking fails
