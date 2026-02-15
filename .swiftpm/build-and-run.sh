@@ -1,8 +1,11 @@
 #! /bin/sh
-
-# Note: this shell script runs on Mac OS only
-
 set -e
+
+cleanup() {
+    osascript -e 'quit app "Playdate Simulator"' 2>/dev/null
+}
+
+trap cleanup EXIT
 
 SWIFT=$(xcrun -f swift -toolchain "swift latest")
 
@@ -16,6 +19,4 @@ if [ -L ~/Developer/PlaydateSDK/Disk/Games/$PRODUCT_NAME.pdx ]; then
 fi
 ln -s "$(pwd)/.build/plugins/PDCPlugin/outputs/$PRODUCT_NAME.pdx" ~/Developer/PlaydateSDK/Disk/Games/$PRODUCT_NAME.pdx
 
-# Using `open` instead of calling the Playdate Simulator directly allows it to be opened if it's not already running, and also allows it to be focused retaining position on screen if it is already running. 
-# This is helpful for quick iteration and prevents the Simulator from being hidden by the code editor window.
-open ~/Developer/PlaydateSDK/Disk/Games/$PRODUCT_NAME.pdx
+~/Developer/PlaydateSDK/bin/Playdate\ Simulator.app/Contents/MacOS/Playdate\ Simulator ~/Developer/PlaydateSDK/Disk/Games/$PRODUCT_NAME.pdx
