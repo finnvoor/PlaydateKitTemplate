@@ -43,7 +43,7 @@
       <PathRunnable
          runnableDebuggingMode = "0"
          Location = "workspace"
-         FilePath = ".swiftpm/build-and-run.sh">
+         FilePath = ".swiftpm/build-and-run-xcode.sh">
       </PathRunnable>
       <MacroExpansion>
          <BuildableReference

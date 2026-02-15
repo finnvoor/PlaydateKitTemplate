@@ -3,10 +3,10 @@
     "tasks": [
         {
             "label": "Playdate: run (debug)",
-            "detail": "./swiftpm/build-and-run.sh",
-            "command": "build-and-run.sh",
+            "detail": "./vscode/tasks/build-and-run-vscode.sh",
+            "command": "build-and-run-vscode.sh",
             "options": {
-                "cwd": "${workspaceFolder}/.swiftpm",
+                "cwd": "${workspaceFolder}/.vscode/tasks",
                 "env": {
                     "PRODUCT_NAME": "${workspaceFolderBasename}"
                 }
@@ -14,6 +14,10 @@
             "presentation": {
                 "close": true,
                 "clear": true
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
             },
             "problemMatcher": []
         },
